@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a top navigation bar with a black background color  */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #000000;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: left;
+  color: #000000;
+}
+
+.homeimg {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+}
+
+.welcome {
+  display: inline-block;
+  position: absolute;
+  top: 100px;
+  margin-left: 50px;
+  width: 650px; 
+}
+
+.homecontent {
+  width: 100%;
+  height: 100vh;
+  background-color: #893d3d;
+}
