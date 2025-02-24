@@ -3,12 +3,10 @@
   padding: 0;
 }
 
-/* Create a top navigation bar with a black background color  */
 .topnav {
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: right;
   color: #000000;
@@ -18,12 +16,10 @@
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   color: #000000;
 }
 
-/* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: left;
   color: #000000;
@@ -37,15 +33,69 @@
 }
 
 .welcome {
-  display: inline-block;
+  display: inline-flex;
   position: absolute;
-  top: 100px;
+  top: 90px;
   margin-left: 50px;
-  width: 650px; 
 }
 
-.homecontent {
-  width: 100%;
-  height: 100vh;
-  background-color: #893d3d;
+#welcometitle {
+  display: inline-flex;
+  position: relative;
+  font-size: 80px;
 }
+
+.welcome p{
+  display: inline-flex;
+  position: relative;
+  top: 10px;
+  margin-left: 90px;
+  margin-right: 90px;
+  font-size: 18px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.recent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+.item {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 23vw;
+    height: auto;
+    display: block;
+  }
+  
+  .contain {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(32, 32, 32, 0.099) 100%);
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contain p{
+    padding: 15px;
+  }
+
+
