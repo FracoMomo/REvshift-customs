@@ -5,6 +5,7 @@
 
 .topnav {
   overflow: hidden;
+  z-index: 1;
 }
 
 .topnav a {
@@ -13,20 +14,22 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  z-index:  1;
   font-size: 17px;
 }
 
 .topnav a.norm:hover {
-  color: #ffffff;
   transition: all .1s ease-in-out;
-  background-color: #000000;
+  text-shadow: 0px 0px 30px rgb(0, 0, 0);
   transform: scale(1.25);
   z-index: 1;
 }
 
 .topnav a.split {
   float: left;
-  color: #000000;
+  color: #ffffff;
+  background-color: #000000;
+  z-index: 1;
 }
 
 .homeimg {
@@ -34,22 +37,24 @@
   height: 100vh;
   display: block;
   object-fit: cover;
+  z-index: -1;
+
 }
 
-#welcome {
+.welcome {
   display: inline-flex;
   position: absolute;
   top: 90px;
   margin-left: 50px;
 }
 
-#welcometitle {
+.welcometitle {
   display: inline-flex;
   position: relative;
   font-size: 80px;
 }
 
-#welcome p{
+.welcome p{
   display: inline-flex;
   position: relative;
   top: 10px;
@@ -60,7 +65,7 @@
   font-size: 20px;
 }
 
-#recent {
+.recent {
   display: flex;
   justify-content: space-evenly;
 }
@@ -111,14 +116,14 @@
   padding: 15px;
 }
 
-#servicereview {
+.servicereview {
   padding: 50px;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
 }
 
-#servicereview h1 {
+.servicereview h1 {
   font-size: 25px;
   text-align: justify;
   text-align-last: center;
@@ -147,7 +152,7 @@
   justify-content: center;
 }
 
-#explore {
+.explore {
   height: 25vh;
   padding: 3%;
   align-items: center;
@@ -168,9 +173,71 @@
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: all .1s ease-in-out;
   text-align: center;
 }
 
 .btn:hover {
-  background: rgb(83, 83, 83);
+  text-shadow: 0px 0px 15px rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  transform: scale(1.02);
+}
+
+.aboutservice {
+  display: inline-flex;
+  position: relative;
+  top: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+  font-size: 18px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.servicewelcome {
+  display: inline-flex;
+  position: absolute;
+  top: 90px;
+}
+
+.whitetext {
+  color: #ffffff;
+}
+
+.servicetypes {
+  position: absolute;
+  display: flex;
+  top: 40%;
+  flex-direction:row;
+}
+
+.servicetypes img {
+  width: 50%;
+}
+
+.servicetitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  width: 50%;
+  margin-right: 5%;
+  color: #ffffff;
+}
+
+.servicetitle h3 {
+  font-size: 50px;
+  padding-bottom: 3%;
+}
+
+.servicetitle p{
+  padding: 2%;
+  margin: .5px;
+  transition: all .1s ease-in-out;
+}
+
+.servicetitle p:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  background-color: #00000070;
+  text-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
