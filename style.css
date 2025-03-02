@@ -1,8 +1,10 @@
-*{
+/* Reset styles */
+* {
   margin: 0;
   padding: 0;
 }
 
+/* Navigation */
 .topnav {
   overflow: hidden;
   z-index: 1;
@@ -14,57 +16,55 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  z-index:  1;
   font-size: 17px;
+  z-index: 1;
 }
 
 .topnav a.norm:hover {
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   text-shadow: 0px 0px 30px rgb(0, 0, 0);
   transform: scale(1.25);
-  z-index: 1;
 }
 
 .topnav a.split {
   float: left;
   color: #ffffff;
   background-color: #000000;
-  z-index: 1;
 }
 
+/* Hero section */
 .homeimg {
   width: 100%;
   height: 100vh;
   display: block;
   object-fit: cover;
   z-index: -1;
-
 }
 
 .welcome {
-  display: inline-flex;
   position: absolute;
   top: 90px;
   margin-left: 50px;
+  display: inline-flex;
 }
 
 .welcometitle {
-  display: inline-flex;
   position: relative;
   font-size: 80px;
+  display: inline-flex;
 }
 
-.welcome p{
-  display: inline-flex;
+.welcome p {
   position: relative;
   top: 10px;
   margin-left: 90px;
   margin-right: 90px;
-  font-size: 18px;
-  text-align: justify;
   font-size: 20px;
+  text-align: justify;
+  display: inline-flex;
 }
 
+/* Card section */
 .recent {
   display: flex;
   justify-content: space-evenly;
@@ -80,7 +80,7 @@
 
 .item {
   position: relative;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .scaleuphov:hover {
@@ -88,6 +88,7 @@
   z-index: 1;
 }
 
+/* Image containers */
 .image-container {
   position: relative;
   display: inline-block;
@@ -109,10 +110,11 @@
   width: 100%;
 }
 
-.contain p{
+.contain p {
   padding: 15px;
 }
 
+/* Service review section */
 .servicereview {
   padding: 50px;
   margin-left: 10%;
@@ -142,26 +144,26 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  width: auto;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Footer */
 .footer {
   height: 25vh;
   padding: 3%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  text-align: center;
   background-color: #000000;
   margin-top: 2%;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-direction: column;
 }
 
+/* Button styles */
 .btn {
   padding: 10px 20px;
   margin-top: 3%;
@@ -170,7 +172,7 @@
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   text-align: center;
 }
 
@@ -180,21 +182,21 @@
   transform: scale(1.02);
 }
 
+/* Service page styles */
 .aboutservice {
-  display: inline-flex;
   position: relative;
   top: 40px;
   margin-left: 90px;
   margin-right: 90px;
-  font-size: 18px;
-  text-align: justify;
   font-size: 20px;
+  text-align: justify;
+  display: inline-flex;
 }
 
 .servicewelcome {
-  display: inline-flex;
   position: absolute;
   top: 90px;
+  display: inline-flex;
 }
 
 .whitetext {
@@ -205,7 +207,7 @@
   position: absolute;
   display: flex;
   top: 40%;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 .servicetypes img {
@@ -226,24 +228,26 @@
   padding-bottom: 3%;
 }
 
-.servicetitle p{
+.servicetitle p {
   color: #ffffff;
   padding: 2%;
-  margin: .5px;
-  transition: all .1s ease-in-out;
+  margin: 0.5px;
+  transition: all 0.1s ease-in-out;
 }
 
 .servicetitle a {
   text-decoration: none;
   color: #ffffff;
 }
+
 .servicetitle p:hover {
   transform: scale(1.1);
   z-index: 1;
-  background-color: #00000070;
+  background-color: rgba(0, 0, 0, 0.7);
   text-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
+/* Container styles */
 .container {
   display: flex;
   flex-direction: column;
@@ -251,6 +255,7 @@
   justify-content: center;
   height: 70vh;
   padding: 5%;
+  padding-bottom: 10%;
 }
 
 .title {
@@ -258,7 +263,8 @@
   align-items: center;
   justify-content: center;
   padding-top: 3%;
-  font-size: 40px
+  padding-bottom: 2%;
+  font-size: 40px;
 }
 
 .cont {
@@ -267,27 +273,63 @@
   gap: 5px;
 }
 
+/* Bottom section */
 .bottom {
   width: 25vw;
-  height: 60vh;
+  height: 72vh;
   position: relative;
-  background-color: red;
+  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  color: white;
+  color: white; 
   font-size: 20px;
   overflow: hidden;
   padding: 10px;
   margin: 5px;
-  text-align: left;
 }
 
 .bottom img {
   width: 100%;
-  height: 55%;
+  height: 45%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.bottom ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60%;
+}
+
+.bottom h2 {
+  font-size: 3.5vh;
+  padding: 5%;
+}
+
+.bottom li {
+  font-size: 2.2vh;
+  padding: 2%; 
+  text-align: left;
+}
+
+#exterior {
+  background-color: rgb(0, 0, 0);
+}
+
+.bottom.whitebg {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.bottom.whitebg h2,
+.bottom.whitebg li {
+  color: rgb(0, 0, 0);
 }
