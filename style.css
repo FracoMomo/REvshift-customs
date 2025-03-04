@@ -206,12 +206,14 @@
 .servicetypes {
   position: absolute;
   display: flex;
+  left: -1.5%;
   top: 40%;
   flex-direction: row;
 }
 
 .servicetypes img {
   width: 50%;
+  transform: scaleX(-1);
 }
 
 .servicetitle {
@@ -309,14 +311,37 @@
   height: 60%;
 }
 
+.skewleft {
+  transform: skew(-6.5deg);
+}
+.skewleft h2 {
+  transform: skew(6.5deg);
+}
+.skewleft li{
+  transform: skew(6.5deg);
+}
+
+
+.skweright {
+  transform: skew(6.5deg);
+}
+.skweright h2 {
+  transform: skew(-6.5deg);
+}
+.skweright li{
+  transform: skew(-6.5deg);
+}
+
 .bottom h2 {
-  font-size: 3.5vh;
+  font-size: 3.3vh;
   padding: 5%;
 }
 
 .bottom li {
-  font-size: 2.2vh;
+  font-size: 2.1vh;
   padding: 2%; 
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: left;
 }
 
