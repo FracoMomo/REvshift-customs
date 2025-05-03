@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>RevShift Customs</title>
+    <title>RevShift</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-    <nav class="topnav">
+    <!-- Anchor for "back to top" functionality -->
+    <div id="top"></div>
+    
+    <!-- Navigation Bar -->
+    <!-- 'id="navbar"' is used for hide/show functionality in JavaScript -->
+    <nav class="topnav" id="navbar">
+        <!-- Brand name with distinct styling (left-aligned) -->
         <a class="split">RevShift Customs</a>
+        <!-- Navigation links (right-aligned) -->
         <a class="norm" href="#contact">Contact</a>
-        <a class="norm" href="#showcase">Showcase</a>
+        <a class="norm" href="showcase.html">Showcase</a>
         <a class="norm" href="services.html">Services</a>
-        <a class="norm" href="#about">About</a>
+        <a class="norm" href="about.html">About</a>
         <a class="norm" href="index.html">Home</a>
     </nav>
 
-    <img src="images/homeimg.jpg" class="homeimg">
-  
+    <!-- Hero/Landing Section -->
+    <!-- Full-screen background image -->
+    <img src="images/homeimg.jpg" class="homeimg" alt="A Home Image of our r34 White Nissan Skyline">
+    <!-- Welcome text overlay positioned absolutely -->
     <div class="welcome">
-        <h1 class="welcometitle">RevShift Customs</h1><br>
+        <h1 class="welcometitle" id="tite">RevShift Customs</h1><br>
         <p>Here at RevShift Custom, we bring machines to life with precision tuning and cutting-edge styling. Whether you're looking to boost performance, refine aesthetics, or build a one-of-a-kind ride, our expert team ensures every modification is crafted for speed, power, and individuality. From high-performance engine tuning to custom bodywork and detailing, we push the limits of design and engineering to deliver cars that turn heads and dominate the streets.</p>
     </div>
-
+    
+    <!-- Recent Projects Gallery Section -->
+    <!-- Flexbox card layout with hover effects -->
     <div class="card">
+        <!-- Card 1 - Each item is a container with hover scaling effect -->
         <div class="item scaleuphov">
             <div class="image-container">
-                <img src="images/recentbuild/front1.jpg" class="homecontent">
+                <img src="images/recentbuild/front1.jpg" class="homecontent" alt="Front end view of car">
+                <!-- Text overlay on hover -->
                 <div class="contain">
                     <p>Custom front-end modifications featuring high-flow cold air intake for better engine cooling performance</p>
                 </div>
             </div>
         </div>
 
+        <!-- Card 2 -->
         <div class="item scaleuphov">
             <div class="image-container">
-                <img src="images/recentbuild/front3.jpg" class="homecontent">
+                <img src="images/recentbuild/front3.jpg" class="homecontent" alt="Side view of car">
                 <div class="contain">
                     <p>High-performance engine tuned to perfection with performance parts for maximum power and reliability</p>
                 </div>
             </div>
         </div>
 
+        <!-- Card 3 -->
         <div class="item scaleuphov">
             <div class="image-container">
-                <img src="images/recentbuild/rear2.jpg" class="homecontent">
+                <img src="images/recentbuild/rear2.jpg" class="homecontent" alt="Far rear view of car">
                 <div class="contain">
                     <p>Custom widebody kit with aggressive aerodynamics, featuring carbon fiber accents for a lightweight</p>
                 </div>
             </div>
         </div>
 
+        <!-- Card 4 -->
         <div class="item scaleuphov">
             <div class="image-container">
-                <img src="images/recentbuild/rear3.jpg" class="homecontent">
+                <img src="images/recentbuild/rear3.jpg" class="homecontent" alt="Close up rear view of car">
                 <div class="contain">
                     <p>High-performance exhaust with deep aggressive sound and aerodynamic accurate spoiler</p>
                 </div>
@@ -61,29 +77,62 @@
         </div>
     </div>
 
+    <!-- Service Review Introduction Section -->
     <div class="servicereview">
         <h1 class="reviewtitle">
-        Our latest projects showcase extreme power upgrades, aggressive aerodynamic kits, and stunning visual transformations. From street beasts to track-ready machines, our customers trust us to create builds that stand out. But don’t just take our word for it—here’s what they have to say:
+        This is our latest project that showcase extreme power upgrades, aggressive aerodynamic kits, and stunning visual transformations. From street beasts to track-ready machines, our customers trust us to create builds that stand out. But don't just take our word for it—here's what they have to say:
         </h1>
     </div>
 
+    <!-- Customer Testimonials Section -->
+    <!-- Two-column review layout -->
     <div class="review">
-        <p>⭐⭐⭐⭐⭐<br>
-            “RevShift Custom took my stock car and turned it into a beast! The tuning was spot-on, and the styling made it look straight out of a video game.”<br><br>– Smokey Nagata.
+        <!-- First review -->
+        <p>⭐⭐⭐⭐⭐<br><br>
+            "RevShift Custom took my stock car and turned it into a beast! The tuning was spot-on, and the styling made it look straight out of a video game."<br><br>– Smokey Nagata
         </p>
-        <p>⭐⭐⭐⭐⭐<br>
-            “Their attention to detail is unreal! My ride not only looks incredible but also performs like a dream.”<br><br>– thekyza
+        <!-- Second review -->
+        <p>⭐⭐⭐⭐⭐<br><br>
+            "Their attention to detail is unreal! My ride not only looks incredible but also performs like a dream."<br><br>– thekyza
         </p>
     </div>
 
+    <!-- Footer Section -->
     <div class="footer">
-        <p>
-        Whether you're chasing raw horsepower, aggressive styling, or the perfect balance of both, RevShift Custom is here to make it happen. 
-        <br>
-        Explore our services today or book a consultation to start your custom build
-        </p>
-        <a href="about.html" class="btn">Read About Us</a>
+        <div class="topFooter">
+            <div class="footerInfo">
+            <p>Whether you're chasing raw horsepower, aggressive styling, or the perfect balance of both, RevShift Custom is here to make it happen. 
+                Explore our services today or book a consultation to start your custom build</p>
+            </div>
+            <div class="miniNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="showcase.html">Showcase</a>
+            <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <!-- Call-to-action button -->
+        <a href="about.html" class="btn">More About Us</a><br>
+        <hr><br>
+
+        <!--Socials Section-->
+        <div class="socials">
+            <a href="https://facebook.com/" target="_blank"><img src="icons/facebook.png"></a>
+            <a href="https://instagram.com/" target="_blank"><img src="icons/instagram.png"></a>
+            <a href="https://linkedin.com/" target="_blank"><img src="icons/linkedin.png"></a>
+            <a href="https://x.com/" target="_blank"><img src="icons/twitter.png"></a>
+        </div>
+        <h6>© 2025 Sebastian Franco S. Camoro. All rights reserved.</h6>
     </div>
 
+    <!-- "Back to Top" Button -->
+    <!-- Initially hidden, appears when scrolling down (controlled by JS) -->
+    <button onclick="location.href='#top'" class="toTop"><img src="icons/angle-circle-left.png"></button>
+
+    <!--Fullscreen View-->
+    <div id="fullscreen-viewer" class="hidden">
+        <img id="fullscreen-image" src="" alt="Full view">
+    </div>
 </body>
 </html>
