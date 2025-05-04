@@ -227,13 +227,13 @@ body {
 .topFooter {
   display: flex;
   width: 100%;
-  max-width: 1200px;
   justify-content: space-between;
   align-items: center;
   text-align: left;
 }
 
 .footerInfo {
+  padding-left: 3%;
   max-width: 60%;
 }
 
@@ -241,7 +241,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: right;
-  align-items: flex-end;
+  align-items: end;
   margin-left: auto; /* 🔑 push it to the far right */
 }
 
@@ -250,6 +250,7 @@ body {
   color: inherit;
   transition: color 0.3s ease;
   margin-bottom: 5px;
+  font-size: 1vw;
 }
 
 .miniNav a:hover{
@@ -264,7 +265,7 @@ body {
 }
 
 hr {
-  width: 95%;
+  width: 90%;
 }
 
 .socials img {
@@ -814,3 +815,63 @@ transition: background-size 0.3s ease;
       padding-bottom: 157.5%;
   }
 }
+
+
+  /* Contact section */
+  .contacts {
+    background-color: rgb(30, 40, 60);
+    height: 108vh;
+    padding-top: 10%;
+  }
+  
+  .contact-item {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-item a,
+  .contact-item p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  .contact-item p {
+    top: 0;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 3.5rem;
+    background-color: rgb(30, 40, 60);
+    width: 37%;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .contact-item a {
+    top: 0.5rem;
+    z-index: 1;
+    font-size: 3rem;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: white;
+    opacity: 0;
+  }
+  
+  .contact-item:hover p {
+    transform: translateX(-100%);
+  }
+  
+  .contact-item:hover a {
+    transform: translateX(10%);
+    color: rgb(219, 73, 73);
+    text-decoration: underline;
+    opacity: 1;
+  }
